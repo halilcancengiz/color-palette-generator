@@ -90,32 +90,32 @@ const GenerateColor = () => {
 
             </div>
             <div className="grid md:grid-cols-5 grow gap-1 text-sm">
-                <div className="flex items-center justify-center" style={{ backgroundColor: `rgb(${mainColor.red}, ${mainColor.green}, ${mainColor.blue})` }}>
-                    <div className="flex items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark" onClick={() => copyToClipboard(rgbToHex(mainColor.red, mainColor.green, mainColor.blue))}>
+                <div className="group flex items-center justify-center" style={{ backgroundColor: `rgb(${mainColor.red}, ${mainColor.green}, ${mainColor.blue})` }}>
+                    <div className="hidden items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark group-hover:flex" onClick={() => copyToClipboard(rgbToHex(mainColor.red, mainColor.green, mainColor.blue))}>
                         <VscCopy size={20} />
                         <span>{rgbToHex(mainColor.red, mainColor.green, mainColor.blue)}</span>
                     </div>
                 </div>
-                <div className="flex items-center justify-center" style={{ background: variations.first }}>
-                    <div className="flex items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark" onClick={() => copyToClipboard(variations.first)}>
+                <div className="group flex items-center justify-center" style={{ background: variations.first }}>
+                    <div className="hidden items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark group-hover:flex" onClick={() => copyToClipboard(variations.first)}>
                         <VscCopy size={20} />
                         <span>{variations.first}</span>
                     </div>
                 </div>
-                <div className="flex items-center justify-center" style={{ background: variations.second }}>
-                    <div className="flex items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark" onClick={() => copyToClipboard(variations.second)}>
+                <div className="group flex items-center justify-center" style={{ background: variations.second }}>
+                    <div className="hidden items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark group-hover:flex" onClick={() => copyToClipboard(variations.second)}>
                         <VscCopy size={20} />
                         <span>{variations.second}</span>
                     </div>
                 </div>
-                <div className="flex items-center justify-center" style={{ background: variations.third }}>
-                    <div className="flex items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark" onClick={() => copyToClipboard(variations.third)}>
+                <div className="group flex items-center justify-center" style={{ background: variations.third }}>
+                    <div className="hidden items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark group-hover:flex" onClick={() => copyToClipboard(variations.third)}>
                         <VscCopy size={20} />
                         <span>{variations.third}</span>
                     </div>
                 </div>
-                <div className="flex items-center justify-center" style={{ background: variations.fourth }}>
-                    <div className="flex items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark" onClick={() => copyToClipboard(variations.fourth)}>
+                <div className="group flex items-center justify-center" style={{ background: variations.fourth }}>
+                    <div className="hidden items-center gap-2 py-2 px-4 text-white rounded-md cursor-pointer bg-dark group-hover:flex" onClick={() => copyToClipboard(variations.fourth)}>
                         <VscCopy size={20} />
                         <span>{variations.fourth}</span>
                     </div>

@@ -6,9 +6,11 @@ import GenerateColor from "./components/GenerateColor";
 function App() {
 
   return (
-    <div >
+    <div className="max-h-screen h-full">
       <ToastContainer />
-      <GenerateColor />
+      <div className="grow">
+        <GenerateColor />
+      </div>
     </div>
   );
 }
