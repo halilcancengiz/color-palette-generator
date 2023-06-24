@@ -1,18 +1,15 @@
 import React from "react";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import GenerateColor from "./components/GenerateColor";
+import Routes from "./routes/Routes";
 
-function App() {
-
+const App = () => {
   return (
     <div className="max-h-screen h-full">
+      <Routes />
       <ToastContainer />
-      <div className="grow">
-        <GenerateColor />
-      </div>
     </div>
-  );
+  )
 }
 
 export default App;

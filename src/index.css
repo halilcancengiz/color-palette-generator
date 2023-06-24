@@ -3,3 +3,24 @@
 @tailwind utilities;
 
 
+.ant-btn-primary:hover {
+    background: green !important;
+    color: white !important;
+}
+
+.ant-btn-primary {
+    background: green !important;
+    color: white !important;
+}
+
+.ant-btn-default:hover {
+    background: #c03140 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.ant-btn-default {
+    background: #c03140 !important;
+    color: white !important;
+    border: none !important;
+}
